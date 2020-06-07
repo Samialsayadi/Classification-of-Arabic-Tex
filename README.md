@@ -8,18 +8,16 @@ The algorithm uses Singular Value Decompisiotn to reduce high dimention and exec
 The  proposed system consists of two main scripts:  `cleaning_arabic.py` and  `Arabic_Fuzzy_Cmean.py`. 
 
 Decomposition Method(SVD):
-``` 
-python 
+```python
 from numpy.linalg import svd
 U,sigma,V = low_rank_approx(matrix,k=7)
 
 projectedDocuments = np.dot(matrix.T, U)
 
-``` 
+ ```
 Classification Method (Fuzzy C-Mean):
 
-``` 
- python 
+```python
  
 def FCMcluster(vectors):
  
@@ -31,7 +29,7 @@ def FCMcluster(vectors):
     return model.predict(vectors)
 #    return kmeans2(vectors, k=len(vectors[0]))
 documentClustering = FCMcluster(projectedDocuments)
-   ``` 
+ ```
 
 You can download the full paper from. [here](https://link.springer.com/chapter/10.1007%2F978-981-15-3357-0_8).
 
