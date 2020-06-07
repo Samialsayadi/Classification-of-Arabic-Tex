@@ -1,9 +1,8 @@
 # Classification of Arabic Text Using Singular Value Decomposition and Fuzzy C-Means Algorithms
 
-The proposed system have generated Arabic Classification and it may use to classify arabic documents, comments on social madie, and also classify the opionion about product. 
+The proposed system has generated Arabic Classification and it may use to classify Arabic documents, comments on social media, and also classify the opinion about the product. 
 
-The algorithm uses Singular Value Decompisiotn to reduce high dimention and execute the smantic classification, then apply Fuzzy C-Means as Classifier Algorithm. 
-
+The algorithm uses Singular Value Decompisiotn to reduce high dimension and execute the semantic classification, then apply Fuzzy C-Means as Classifier Algorithm. 
 
 The  proposed system consists of two main scripts:  `cleaning_arabic.py` and  `Arabic_Fuzzy_Cmean.py`. 
 
