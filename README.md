@@ -33,6 +33,7 @@ def FCMcluster(vectors):
 documentClustering = FCMcluster(projectedDocuments)
    ``` 
 
+You can download the full paper from. [here](https://link.springer.com/chapter/10.1007%2F978-981-15-3357-0_8).
 
 
 # Dependencies
