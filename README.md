@@ -1,4 +1,4 @@
-# Classification of Arabic Text Using Singular Value Decomposition and Fuzzy C-Means Algorithms
+# Classification of Arabic Text Using Singular Value Decomposition and Fuzzy C-Means Algorithms [here](https://link.springer.com/chapter/10.1007%2F978-981-15-3357-0_8).
 
 The proposed system uses to classify Arabic documents, comments on social media, and also classify the opinion about the product. and it validated by two common datasets (Alj-News 5 and CNN News).
 
@@ -8,7 +8,7 @@ The  proposed system consists of two main scripts:  `cleaning_arabic.py` and  `A
 
 # Pre-Processing steps:
 <ol>
-<li> Get all the Arabic words.[here:](https://sourceforge.net/projects/arabic-wordlist)
+<li> Get all the Arabic words [here:](https://sourceforge.net/projects/arabic-wordlist).
 
 ```python
 def words():
@@ -54,6 +54,7 @@ print ('Cleaning is done!')
 Decomposition Method(SVD):
 > before applied the SVD algorithm, you must computes an k-rank approximation of a matrix.
 ```python
+from numpy.linalg import svd
 
 def low_rank_approx(matrix, k=6):
     U,sigma,V= np.linalg.svd(matrix, full_matrices=False)
@@ -139,7 +140,9 @@ Classification Method (Fuzzy C-Mean):
 
 
 ```python
- 
+
+from skcmeans.algorithms import Fuzzy
+
 def FCMcluster(vectors):
  
     """
